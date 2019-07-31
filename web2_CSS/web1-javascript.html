@@ -3,6 +3,8 @@
 <head>
   <title>WEB1-html</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+<!--
   <style>
   body{
     margin: 0;
@@ -28,7 +30,19 @@
       display: grid;
       grid-template-columns: 150px 1fr;
     }
+    @media(max-width:700px){
+      div{
+        display: none;;
+      }
+      ol{
+        border-right: none;
+      }
+      h1{
+        border-bottom: none;
+      }
+    }
   </style>
+-->
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
@@ -40,7 +54,7 @@
     <li> <a href="appendix/index.html">Append</a> </li>
     <li> <a href="1.html">learn HTML</a> </li>
   </ol>
-  <div>
+  <div="article">
   <h2>JavaScript</h2>
   <p>
     JavaScript (/ˈdʒɑːvəˌskrɪpt/), often abbreviated as JS, is a high-level,

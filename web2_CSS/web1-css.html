@@ -3,6 +3,8 @@
 <head>
   <title>WEB1-CSS</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <!--
   <style>
   body {
     margin: 0;
@@ -18,7 +20,7 @@
       color:black;
       text-decoration:none;
     }
-    #grid ol {
+    ol {
       border-right: 1px solid gray;
       width: 100px;
       margin:0px;
@@ -32,7 +34,19 @@
     #grid #article{
       padding-left: 25px;
     }
+    @media(max-width:600px) {
+      #grid{
+        display: block;
+      }
+      ol{
+        border-right: none;
+      }
+      h1{
+        border-bottom: none;
+      }
+    }
   </style>
+-->
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>

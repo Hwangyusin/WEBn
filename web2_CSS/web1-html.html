@@ -3,6 +3,8 @@
 <head>
   <title>WEB1-html</title>
   <meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<!--
   <style>
   body{
     margin: 0;
@@ -28,7 +30,19 @@
     display: grid;
     grid-template-columns: 150px 1fr;
   }
+  @media(max-width:600px){
+    #grid {
+      display: block;
+    }
+    h1{
+      border-bottom: none;
+    }
+    ol{
+      border-right: none;
+    }
+  }
   </style>
+-->
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
@@ -40,7 +54,7 @@
     <li> <a href="appendix/index.html">Append</a> </li>
     <li> <a href="1.html">learn HTML</a> </li>
   </ol>
-  <div>
+  <div="article">
   <h2>html</h2>
   <p>
     Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser.
