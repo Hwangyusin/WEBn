@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="button" value="Hi" onclick="alert('onclick')">
+    <!--
+      type = button 버튼
+      onclick="JavaScript" 클릭했을때 자바 스크립트
+    alert(text) 경고>-->
+    <input type="text" onchange="alert('onchange')">
+    <!--
+    type = text 편집 가능한 텍스트 박스
+    onchange="JavaScript" 값(Value)이(가) 바꼈을때
+    alert(text) 경고창
+  -->
+  <input type="text" onkeydown="alert('onkeydown')">
+  <!--
+  type = text 편집 가능한 텍스트 박스
+  onkeydown="JavaScript" 키보드가 눌렸을때
+  alert(text) 경고창
+-->
+<!--
+  onkeydown,onchange,onclick... 등등
+  이것을 'event' 라고 함
+-->
+  </body>
+</html>
