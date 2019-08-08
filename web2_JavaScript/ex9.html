@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>object</h1>
+    <h2>How to</h2>
+    <script>
+      var arr = {
+        "name" : "yusin",
+        "city" : "daegu"
+      };
+      //[] 배열 {} 객체
+      document.write("name : "+arr.name+"<br>");
+      document.write("city : "+arr.ciry+"<br>");
+      arr.school = "dsgw";
+      document.write("school : "+arr.school+"<br>");
+      arr["Grade class"] = "2319";
+      document.write("Grade class : "+arr["Grade class"]+"<br>");
+    </script>
+    <h2>Iterate</h2>
+    <h3>document.write(key+"&lt;br&gt;");</h3>
+    <script>
+      for(var key in arr){  //1. arr에 있는 데이터의 수만큼 반복 2. key는 데이터의 이름
+          document.write(key+"<br>");
+      }
+      </script>
+      <h3>document.write(arr[key]+"&lt;br&gt;");</h3>
+      <script>
+      for(var key in arr){  //1. arr에 있는 데이터의 수만큼 반복 2. key는 데이터의 이름
+          document.write(arr[key]+"<br>");
+      }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+      arr.showAll = function(){
+        for(var key in arr){
+            document.write(arr[key]+"<br>");
+      }
+    }
+    arr.showAll(); //arr 로 고정
+
+    arr.showAllthis = function(){
+      for(var key in this){
+          document.write(this[key]+"<br>");
+    }
+  }
+  arr.showAllthis(); //객체에 포함된 것만
+    </script>
+  </body>
+</html>

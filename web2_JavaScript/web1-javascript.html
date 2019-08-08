@@ -3,6 +3,40 @@
 <head>
   <title>WEB1-html</title>
   <meta charset="utf-8">
+  <script>
+  var Links = {
+    setcolor : function(color){
+      var alist = document .querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length) {
+        alist[i].style.color = 'color';
+        i++;
+      }
+    }
+  }
+  var Body = {
+    setcolor:function(color){
+      document.querySelector('body').style.color = color;
+    },
+    setBackgroundColor:function(color){
+      document.querySelector('body').style.backgroundColor = color;
+    }
+  }
+  function nightDayHandler(self){
+    var target = document.querySelector('body');
+      if(self.value === 'night'){
+        Body.setBackgroundColor('black');
+        Body.setcolor('white');
+        self.value = 'day'
+        Link.setcolor('powderblue');
+      } else {
+        Body.setBackgroundColor('white');
+        Body.setcolor('black');
+        self.value = 'night'
+        Link.setcolor('blue');
+      }
+    }
+  </script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
@@ -56,6 +90,7 @@
         }
           ">
         -->
+<!--
         <input type="button" value="night" onclick="
         var target = document.querySelector('body');
           if(this.value === 'night'){
@@ -80,6 +115,10 @@
             }
           }
             ">
+          -->
+    <input type="button" value="night" onclick="
+    nightDayHandler(this);
+        ">
   <ol>
     <li> <a href="web1-html.html">HTML</a> </li>
     <li> <a href="web1-css.html">CSS</a> </li>
@@ -105,28 +144,7 @@
     It relies upon the host environment in which it is embedded to provide these features.
   </p>
   <input type="button" value="night" onclick="
-  var target = document.querySelector('body');
-    if(this.value === 'night'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      this.value = 'day'
-      var alist = document .querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length) {
-      	alist[i].style.color = 'powderblue';
-      	i++;
-      }
-    } else {
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      this.value = 'night'
-      var alist = document .querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length) {
-      	alist[i].style.color = 'blue';
-      	i++;
-      }
-    }
+  nightDayHandler(this);
       ">
 </body>
 </html>
